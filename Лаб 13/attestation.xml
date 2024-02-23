@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="attestation.xsl" type="text/xsl"?>
+<list>
+    <student>
+        <name>Иванов</name>
+        <mark>3</mark>
+    </student>
+    <student>
+        <name>Сидоров</name>
+        <mark>5</mark>
+    </student>
+    <student>
+        <name>Петров</name>
+        <mark>4</mark>
+    </student>
+    <student>
+        <name>Никитина</name>
+        <mark>6</mark>
+    </student>
+    <student>
+        <name>Смирнова</name>
+        <mark>9</mark>
+    </student>
+</list>

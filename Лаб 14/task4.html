@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500">
+        <defs>
+            <path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+        </defs>
+        <use x="0" xlink:href="#home"/>
+        <use x="100" transform="rotate(45 150 50)" xlink:href="#home"/>
+        <use x="200" transform="scale(0.5,0.5) translate(250,50)" xlink:href="#home"/>
+        <use x="300" transform="skewX(45) translate(-80)" xlink:href="#home"/>
+        <use x="400" xlink:href="#home"/>
+    </svg>
+</body>
+</html>

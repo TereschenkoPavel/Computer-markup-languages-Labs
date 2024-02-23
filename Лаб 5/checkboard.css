@@ -1,0 +1,35 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 2px solid black;
+}
+tr:nth-child(n+2):nth-child(-n+9):nth-child(odd) 
+td:nth-child(n+2):nth-child(-n+9):nth-child(odd){
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+tr:nth-child(n+2):nth-child(-n+9):nth-child(even)
+td:nth-child(n+2):nth-child(-n+9):nth-child(even){
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+td:first-child, td:last-child{
+    background-color: lightgray;
+    width: 18.4px;
+}
+tr:first-child, tr:last-child{
+    background-color: lightgray;
+    height: 22px;
+}
+tr:first-child td:first-child,
+tr:first-child td:last-child,
+tr:last-child td:first-child,
+tr:last-child td:last-child{
+    background-color: white;
+    border: 0;
+}
+

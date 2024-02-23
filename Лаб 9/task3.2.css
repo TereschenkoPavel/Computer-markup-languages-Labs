@@ -1,0 +1,16 @@
+.grid {
+    display:grid;
+    grid-template-areas:
+    "head head head"
+    "nav artcl aside"
+    "foot foot foot";
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 15fr 1fr;
+    gap: 5px;
+}
+.grid div{
+    border: 1px solid black;
+}
+div{text-align: center;}
+nav{line-height: 200%;}
+h3{margin: 0;}

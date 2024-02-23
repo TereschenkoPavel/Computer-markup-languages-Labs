@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg>
+        <defs>
+            <linearGradient id="greenyellow">
+                <stop offset="0%" stop-color="yellow">
+                    <animate attributeName="stop-color"  values="yellow;green" dur="2s" repeatCount="indefinite"/>
+                </stop>
+                <stop offset="100%" stop-color="yellow">
+                    <animate attributeName="stop-color"  values="yellow;orange" dur="2s" repeatCount="indefinite"/>
+                </stop>
+            </linearGradient>
+        </defs>
+        <circle cx="30" cy="35" r="25" fill="url('#greenyellow')">
+        </circle>
+        <rect x="60" y="10" width="50" height="50" fill="#ff0000" stroke="black">
+            <animate attributeName="stroke-width" from="0" to="5" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" from="0" to="1" dur="2s" repeatCount="indefinite"/>
+        </rect>
+        <ellipse cx="160" cy="35" rx="40" ry="25" fill="green">
+            <animate attributeName="fill" from="green" to="yellow" dur="2s" begin="click"/>
+        </ellipse>
+        <polygon points="205 60 255 60 230 10" fill="#ffff00" stroke="black" stroke-width="3">
+            <animate attributeName="stroke" from="black" to="yellow" begin="mouseover" dur=".5s" fill="freeze"/>
+        </polygon> 
+        <polyline points="5 70 135 70 110 90 255 90" stroke-width="1" stroke="#661177" fill="none">
+        </polyline>
+    </svg>
+</body>
+</html>

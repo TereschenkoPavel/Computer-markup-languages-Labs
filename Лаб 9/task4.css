@@ -1,0 +1,22 @@
+h2{font-size: 25pt;}
+ul{
+    list-style-type: none;
+}   
+nav li{
+    display: inline;
+    float: left;
+    background-color: yellow;
+    border: 1px solid green;
+}
+nav li a{
+    padding: 4px;
+    font-size: 8pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    display: inline-block;
+}
+.container{
+    margin:0;
+    width: 100%;
+}

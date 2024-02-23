@@ -1,0 +1,98 @@
+body{
+    background-color: lightblue;
+}
+div{
+    margin-left: 195px;
+    margin-top: 25px;
+}
+img{
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    transform: perspective(200px) rotateY(30deg);
+    float: left;
+    margin-left: -170px;
+}    
+.one{
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.two{
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.three{
+    animation-name: anim3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.four{
+    animation-name: anim4;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.five{
+    animation-name: anim5;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim1{
+    50%{
+        filter: none;
+        margin-left: -170px;
+        transform: rotateY(0);
+    }
+    100%{
+        margin-left: 5px;
+        transform: rotateY(0);
+    }
+}
+@keyframes anim2{
+    50%{
+        filter: none;
+        margin-left: -170px;
+        transform: rotateY(0);
+    }
+    100%{
+        filter: blur(10px);
+        margin-left: 5px;
+        transform: rotateY(0);
+    }
+}
+@keyframes anim3{
+    50%{
+        filter: none;
+        margin-left: -170px;
+        transform: rotateY(0);
+    }
+    100%{
+        filter: grayscale(1);
+        margin-left: 5px;
+        transform: rotateY(0);
+    }
+}
+@keyframes anim4{
+    50%{
+        filter: none;
+        margin-left: -170px;
+        transform: rotateY(0);
+    }
+    100%{
+        filter: invert(1);
+        margin-left: 5px;
+        transform: rotateY(0);
+    }
+}
+h1{
+    animation-name: transparent;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes transparent {
+    0%{color: rgba(0, 0, 0, 0);}
+    100%{color: rgba(0, 0, 0, 1);}
+}

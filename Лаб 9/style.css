@@ -1,0 +1,17 @@
+.grid {
+    font-size: 18px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30px 120px
+    120px;
+    grid-template-rows: 220px;
+    grid-gap: 5px;
+}
+.grid div{
+    border: 1px solid black;
+}
+.header{
+    padding: 3px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}

@@ -1,0 +1,39 @@
+input[type="text"], 
+input[type="email"]{
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,1);
+    box-shadow: inset 0 0 10px rgba(255,255,255,.75);
+}
+button{
+    font-size: 1.2em;
+    border-radius: 5px;
+    color: white;
+    background-color: navy;
+    box-shadow: 0 0 4px white;
+}
+.buttons{
+    text-align: right;
+}
+label{
+    font-size: 17px;
+}
+input[type="text"]:focus{
+    background-color: white;
+    color: black;
+}
+table{
+    background-color: indigo;
+    width: 300px;
+    color: white;
+    border-spacing: 5px 12px;
+}
+td{
+    font-size: 1.2em; 
+}
+div, table{
+    width: 400px;
+}
+td:first-child{
+    width: 200px;
+}

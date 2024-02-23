@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cart">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="head">
+                <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="nname" type="xs:string"/>
+                    <xs:element name="ncost" type="xs:string"/>
+                </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="item" maxOccurs="unbounded">
+                <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="cost" type="xs:string"/>
+                </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

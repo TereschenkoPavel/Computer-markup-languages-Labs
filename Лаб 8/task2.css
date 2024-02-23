@@ -1,0 +1,15 @@
+ul{
+    list-style-type: none;
+}   
+nav li{
+    display: inline;
+    float: left;
+    background-color: yellow;
+    border: 1px solid green;
+}
+nav li a{
+    padding: 5px;
+    text-decoration: none;
+    color: green;
+    display: inline-block;
+}

@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title> YouTube Каналы  </title>
+  <link rel="stylesheet" href="gallery.css">
+  </head>
+<body>
+	<header >
+		<h1> YouTube Каналы </h1>
+	</header>
+			
+	<main>
+	<article>
+	<div id ="all">
+		<figure>
+			<p>
+			<p id="replace">Канал<br>про<br>математику<br></p>
+			<img id="img1" src="images/3Blue1Brown.jpg" onmouseover="mouseOver()"> </p>
+			<figcaption> 3Blue1Brown </figcaption>
+		</figure>
+		<figure>
+			<p> <img id="img2" src="images/Vsauce.jpg"> </p>
+			<figcaption> Vsauce </figcaption> 
+		</figure>
+		<figure>
+			<p> <img id="img3" src="images/Numberphile.jpg"> </p>
+			<figcaption> Numberphile </figcaption> 
+		</figure>
+		<figure>
+			<p> <img id="img4" src="images/CGP grey.jpg" onMouseOver="changeImage('images/SciOne.jpg')" onMouseOut="changeImage('images/CGP grey.jpg')"> </p>
+			<figcaption> CGP grey </figcaption> 
+		</figure>
+		
+	</div>
+	</article>
+	</main>
+	
+<script>
+document.getElementById('img2').onclick = border;
+function border() { 
+	img2.style.borderColor = "red"; 
+} 
+function changeImage(src)
+{
+	img4.src = src;
+}
+function mouseOver()
+{
+	img1.style.display="none";
+	replace.style.display= "block";
+}
+</script>  
+</body>
+</html>

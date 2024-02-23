@@ -1,0 +1,26 @@
+td{
+    color: white;
+    border: 2px ridge black;
+}
+table{
+    text-align: center;
+    empty-cells: hide;
+    border-spacing: 0;
+}
+tr:first-child>td{
+    background-color: darkblue;
+    font-size: 1.2em;
+}
+td:first-child{
+    color: black;
+    font-weight: bold;
+}
+.second{
+    background-color: #00bff0;
+}
+.third{
+    background-color: purple;
+}
+.fourth{
+    background-color: green;
+}

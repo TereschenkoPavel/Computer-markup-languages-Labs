@@ -1,0 +1,44 @@
+#one {
+    border-color: orange darkblue yellow brown;
+    border-width: 5px;
+    border-style: solid;
+}
+#two{
+    border-color: #007BA7;
+    border-width: 0 5px;
+    border-style: solid;
+}
+#three{
+    border-top-style: solid;
+    border-style: dashed;
+    border-color: skyblue;
+    border-top-style: solid;
+    border-top-color: rgb(229, 43, 80);
+}
+#four{
+    border: dotted orange 1px;
+}
+#five{
+    border-color: darkblue maroon;
+    border-width: 2px;
+    border-style: solid dashed;
+}
+#six{
+    border: double #B3446C;
+}
+#seven{
+    border-top: #808000 1px dashed;
+    border-bottom: #FF7518 3px solid;
+}
+#eight{
+    border-left: double #CC7722;
+    border-bottom: double #CC7722;
+}
+#nine{
+    border-right: ridge #B5A642;
+    border-top: ridge #B5A642;
+}
+#ten{
+    border: dotted rgb(0,40,0);
+    border-width: 0 5px 5px 5px;
+}

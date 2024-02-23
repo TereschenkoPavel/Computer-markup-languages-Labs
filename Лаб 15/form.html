@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Форма </title>
+  <style>
+    
+    .imp { 
+     font-size: 105%;
+     font-family: serif;
+     position: relative; 
+    }
+	.box
+	{
+	height: 340px;
+  width: 600px;
+  
+	}
+	.boxx
+	{
+	height: 100px;
+  width: 600px;
+  margin-left:250px;
+	}
+	.all
+	{
+	background-color:#ECECBB;
+	width:850px;
+	margin-left:500px;
+	}
+	
+  </style> 
+</head>
+<body bgcolor="ECECEE">
+	
+		<h1 align="center"> Данные студента <br></h1>
+	<div class="all">
+	<form>
+		<font color="#0E1711" size="+1" face="calibri">
+		<div class="box">
+			<p align="right" >	
+				<br>Имя студента
+				<input type="text" id="t1" autocomplete="off" required placeholder="Обязательно заполнить">
+			</p>
+
+			<p align="right">
+				Отчество студента
+				<input type="text" required autocomplete="off" placeholder="Обязательно заполнить" id="t2">
+			</p>
+
+			<p align="right" >
+				Фамилия студента
+				<input type="text" id="t3" autocomplete="off" placeholder="Обязательно заполнить" required>
+			</p>
+
+			<p align="right">
+				Адрес почты
+				<input type="text"  id="t4" autocomplete="off">
+			</p>
+
+			<p align="right" >
+				Контактный номер
+				<input type="text" autocomplete="off" id="t5" >
+			</p>
+
+			
+			<p align="right" >
+				Факультет
+				<select id="t6">
+					<option disabled selected> Выберите вариант </option>
+					<option> ФИТ </option>
+					<option> ТОВ </option>
+					<option> другие </option>
+				</select>			</p>
+			<p align="right" >
+				номер группы
+				<select id="t7">
+					<option disabled selected> Выберите вариант </option>
+					<option> 1 </option>
+					<option> 2 </option>
+					<option> 3 </option>
+					<option> другая </option>
+				</select>			</p>
+						
+			<p align="right" >
+				Курс
+				<select id="t8">
+					<option disabled selected> Выберите вариант </option>
+					<option> 1 </option>
+					<option> 2 </option>
+					<option> 3 </option>
+					<option> 4 </option>
+					<option> 5 </option>
+
+				</select>			</p>
+		</div>
+		<div class="boxx">
+			<p align="left">
+					Какую социальную 
+				<input type="checkbox" id="check_1"> VK
+				<input type="checkbox" id="check_2"> Facebook
+				<input type="checkbox" id="check_3"> Instagram
+				<br>
+				сеть вы используете?
+			</p>
+			<p>
+				<input type="button" id="submit_button" value="Отправить" align="center">
+			</p>
+		</font>
+		</div>
+	</div>
+	</form>
+	<footer>
+		
+		<div id="divi" style="visibility: hidden;">
+		<h2>
+<span id="info_1">Имя не указано,</span>
+<span id="info_2">Отчество не указано,</span>
+<span id="info_3">Фамилия не указана.</span><br>
+Почта: <span id="info_4">не указана</span><br>
+Контактный номер:<span id="info_5">не указан</span><br>
+<span id="info_6">Факультет не указан</span>,
+<span id="info_7">не указана </span> группа
+<span id="info_8">; неизвестный</span> курс <br> Использует
+<span id="info_9"></span>
+<span id="info_10"></span>
+<span id="info_11"></span>
+		</h2>
+		</div>
+	</footer>
+	<script>
+        submit_button.addEventListener('click', output)
+		function output()
+		{	
+			let in_check = 0;
+			let text_1 = t1.value;
+			if (text_1 != '')
+			{
+				info_1.innerHTML=text_1;
+			}
+			let text_2 = t2.value;
+			if (text_2 != '')
+			{
+				info_2.innerHTML=text_2;
+			}
+			let text_3 = t3.value;
+			if (text_3 != '')
+			{
+				info_3.innerHTML=text_3;
+			}
+			let text_4 = t4.value;
+			if (text_4 != '')
+			{			
+				info_4.innerHTML=text_4;
+			}
+			let text_5 = t5.value;
+			if (text_5 != '')
+			{
+				info_5.innerHTML=text_5;
+			}
+			let text_6 = t6.value;
+			if (text_6 != 'Выберите вариант')
+			{
+				info_6.innerHTML=text_6;
+			}
+			let text_7 = t7.value;
+			if (text_7 != 'Выберите вариант')
+			{
+			info_7.innerHTML=text_7;
+			}
+			let text_8 = t8.value;
+			if (text_7 != 'Выберите вариант')
+			{
+			info_8.innerHTML=text_8;
+			}
+			divi.style.visibility = "visible"; 
+			if(check_1.checked)
+			{
+				info_9.innerHTML='VK';
+				in_check++;
+			}
+			if(check_2.checked)
+			{
+				info_10.innerHTML=', Facebook';
+				in_check++;
+			}
+			if(check_3.checked)
+			{
+				info_11.innerHTML=', instagram';
+				in_check++;
+			}
+			if(in_check == 0)
+			{
+				info_9.innerHTML='другие соцсети';
+			}
+		}
+		
+	</script>
+</body>
+</html>

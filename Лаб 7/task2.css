@@ -1,0 +1,25 @@
+img{
+    width: 300px;
+}
+.img1{
+    transform: perspective(50em) rotateX(40deg);
+}
+.img2{
+    transform: perspective(50em) rotateY(40deg);    
+}
+.img3{
+    transform: perspective(50em) rotateX(40deg);
+}
+.img4{
+    transform: perspective(50em) rotateY(-40deg);
+}
+h1{
+    animation-name: transparent;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes transparent {
+    0%{color: rgba(0, 0, 0, 0);}
+    100%{color: rgba(0, 0, 0, 1);}
+}

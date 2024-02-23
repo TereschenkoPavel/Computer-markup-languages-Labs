@@ -1,0 +1,28 @@
+div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    font-size: larger;
+    color: red;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes anim{
+    20%{
+        color: orange;
+    }
+    40%{
+        color: yellow;
+    }
+    60%{
+        color: lime;
+    }
+    80%{
+        color: blue;
+    }
+    100%{
+        color: blueviolet;
+    }
+}

@@ -1,0 +1,31 @@
+li {
+    list-style: none;
+    background-image: url(images/marker.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-bottom: 2px;
+    background-size:contain;
+}
+body{
+    background-image: url(images/fit.jpg);
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: 50px;
+}
+.leftimg{
+    width: 110px;
+    float: left;
+}
+.rightimg{
+    width: 110px;
+    float: right;
+}
+img ~ p{
+    margin: 0 auto;
+    padding: 0;
+    text-indent: 25px;
+}
+.container{
+    width: 50%;
+}

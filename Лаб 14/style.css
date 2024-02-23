@@ -1,0 +1,22 @@
+    h1, h2, h3, h4, h5, h6 {
+        color: purple;
+        font-family: 'Monotype Corsiva';
+    }
+    .first {
+        color: #aa2222;
+        font-family: 'Times New Roman';
+        font-size: 18pt;
+    }
+    .second {
+        color: #c2c226;
+        font-family: 'Times New Roman';
+        font-size: 20pt;
+    }
+    .third {
+        color: #208020;
+        font-family: 'Times New Roman';
+        font-size: 22pt;
+    }
+    tr td, tr th {
+        color: rgb(234, 252, 232);
+    }

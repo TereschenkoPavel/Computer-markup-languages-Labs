@@ -1,0 +1,64 @@
+<html>
+<head>
+  <title> Чайный магазин </title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+	<header style="background-color:#89BA95">
+		<h1> Чайный магазин </h1>
+	</header>
+			
+	<main>
+	<article>
+	<div id ="all">
+	<figure>
+		<p> <img id="img1" src="images/tea1.jpg" onmouseover="replacing()"> </p>
+		<figcaption> Те гуань инь </figcaption>
+	</figure>
+	<figure>
+		<p> <img id="img2" src="images/tea2.jpg" class="image_2" onclick="border_color()"> </p>
+		<figcaption> Дун дин </figcaption> 
+	</figure>
+	<figure>
+		<p> <img id="img3" src="images/tea3.jpg"> </p>
+		<figcaption> Ци цзин тан </figcaption> 
+	</figure>
+	<figure>
+		<p> <img id="img4" src="images/tea4.jpg" onMouseOver="changeImage('images/cat.gif')" onMouseOut="changeImage('images/tea4.jpg')"> </p>
+		<figcaption> Шуй сянь </figcaption> 
+	</figure>
+	
+	</div>
+	<div id="replace">
+		<h1>
+			описание <br>
+			из <br>
+			3-х строк <br>
+		</h1> 
+	</div>
+	</article>
+	</main>
+	
+	<script>	
+		let styles = 'border: 5px solid green;';
+        img1.addEventListener('click', first_img)
+
+		function border_color() { 
+            img2.style.borderColor = "red"; 
+        } 
+		function changeImage(src)
+{
+	img4.src = src;
+}
+
+function replacing()
+{
+            img1.style.opacity = "0";
+			replace.style.opacity = "100%";
+}
+
+
+
+	</script>  
+</body>
+</html>

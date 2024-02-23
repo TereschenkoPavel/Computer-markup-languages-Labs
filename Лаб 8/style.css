@@ -1,0 +1,33 @@
+aside{
+    float: right;
+    border: 1px solid black;
+}
+aside>ul{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}    
+aside>ul li{
+    background-color: beige;
+    display: block;
+    width: 400px;
+    padding: 5px;
+    margin: 8px 5px;
+}
+aside a{
+    text-decoration: none;
+}
+aside a:link{
+    color: red;
+}
+aside a:visited{
+    color: #8B0000;
+}
+aside a:hover{
+    color: green;
+}
+aside a:active{
+    color: rgb(184, 134, 11);
+}

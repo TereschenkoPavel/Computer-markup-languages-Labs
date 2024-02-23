@@ -1,0 +1,15 @@
+img{
+    width: 300px;
+}
+.img1{
+    transform: perspective(50em) rotateX(40deg);
+}
+.img2{
+    transform: perspective(50em) rotateY(40deg);    
+}
+.img3{
+    transform: perspective(50em) rotateX(40deg);
+}
+.img4{
+    transform: perspective(50em) rotateY(-40deg);
+}

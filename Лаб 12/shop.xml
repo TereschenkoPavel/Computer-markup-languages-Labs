@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<cart>
+    <head>
+        <nname>Название</nname>
+        <ncost>Цена</ncost>
+    </head>
+    <item>
+        <name>Скетчбук</name>
+        <cost>18р</cost>
+    </item>
+    <item>
+        <name>прозрачные стикеры</name>
+        <cost>5р</cost>
+    </item>
+    <item>
+        <name>кружка</name>
+        <cost>15р</cost>
+    </item>
+    <item>
+        <name>набор наклеек</name>
+        <cost>8р</cost>
+    </item>
+    <item>
+        <name>постер</name>
+        <cost>22р</cost>
+    </item>
+</cart>

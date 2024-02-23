@@ -1,0 +1,36 @@
+nav>ul, nav>ul>li>h1, body{
+    padding: 0px; 
+    margin: 0;
+}
+nav>ul>li{
+    position: relative;
+    background-color: yellow;
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    text-align:center;
+}
+h1{display: block;
+height: 30px;
+}
+li{
+    list-style-type: none;
+}
+ul li ul {
+    padding: 0;
+    width: 65%;
+    margin-left: -1px;
+    display: none;
+}
+ul li:hover ul{
+    display: block;
+}
+ul li ul li{
+    background-color: indianred;
+    border: dashed black;
+    border-width: 2px;
+    border-bottom-width: 0;
+}
+ul li ul li:last-child{
+    border-bottom-width: 2px;
+}

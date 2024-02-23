@@ -1,0 +1,63 @@
+div {
+    display:inline-block;
+    border: 10px;
+    padding: 15px;
+    font-size: 20p;
+    margin: 10px;
+}
+
+#R {
+    border-color: rgb(255, 0, 0);
+    border-style: outset;   
+}
+#G {
+    border-color: rgb(0, 255, 0);
+    border-style: dashed;
+}
+#B {
+    border-color:rgb(0, 0, 255);
+    border-style: dotted;
+}
+#C {
+    border-color: rgb(0, 255, 255);
+    border-style: double;
+}
+#M {
+    border-color: rgb(255, 0, 255);
+    border-style: groove;
+}
+#Y {
+    border-color:rgb(255, 255, 0);
+    border-style:inset
+}
+#K {
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+span {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #FFA500;
+    border-style: solid;
+    border-color: #FF4500;
+    border-width: 3px;
+}
+#first {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+#second{
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 20px/40px;
+    box-shadow: inset 2px 2px 8px 8px rgba(0,0,0,.5);
+    overflow:auto;
+}
+#third{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FF6347;
+}

@@ -1,0 +1,26 @@
+button{
+    width: 300px;
+    height: 100px;
+    transition: 0.3s;
+    border: 0;
+    opacity: 1;
+}
+.button1:hover{
+    background-color: black;
+    color: white;
+}
+.button2:hover{
+    border: 7px solid red;
+    outline: 7px solid yellow;
+}
+.button3:hover{
+    border: solid green;
+    border-width: 7px 0;
+}
+.button4:hover{
+    border: solid blue;
+    border-width: 0 7px;
+}
+.button5:hover{
+    background-image: radial-gradient(yellow ,rgb(226, 42, 122) 20%,magenta 40%,magenta 45%,rgb(79, 135, 255) 70%,cyan 80%);
+}
